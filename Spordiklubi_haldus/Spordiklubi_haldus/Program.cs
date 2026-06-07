@@ -34,4 +34,14 @@ app.MapControllerRoute(
     .WithStaticAssets();
 
 
+// See blokk käivitab andmete algistamise mälusisesse baasi
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<Spordiklubi_haldus.Data.SpordiklubiHaldusContext>();
+
+    // Kutsume välja sinu DbInitializeri
+    Spordiklubi_haldus.Data.DbInitializer.Initialize(context);
+}
+
 app.Run();
