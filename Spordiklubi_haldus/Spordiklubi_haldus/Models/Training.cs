@@ -12,7 +12,6 @@ namespace Spordiklubi_haldus.Models
         public DateTime TrainingDate { get; set; }
 
         public int MaximumMembers { get; set; }
-
         public int SportId { get; set; }
         public Sport Sport { get; set; }
 

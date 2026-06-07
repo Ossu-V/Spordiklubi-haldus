@@ -53,8 +53,8 @@ namespace Spordiklubi_haldus.Data
             {
                 new Member
                 {
-                    FirstName = "Aron",
-                    LastName = "Tuur",
+                    FirstName = "Toomas",
+                    LastName = "Loss",
                     JoinDate = new DateTime(2026, 1, 10)
                 },
 
