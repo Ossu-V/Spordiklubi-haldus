@@ -17,6 +17,7 @@ namespace Spordiklubi_haldus.Data
         public DbSet<Sport> Sports { get; set; }
         public DbSet<Training> Trainings { get; set; }
         public DbSet<Registration> Registrations { get; set; }
+        public DbSet<Trainer> Trainers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
