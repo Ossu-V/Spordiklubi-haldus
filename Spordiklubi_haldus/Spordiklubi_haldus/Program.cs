@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Spordiklubi_haldus.Data;
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("SpordiklubiHaldusContext") ?? throw new InvalidOperationException("Connection string 'SpordiklubiHaldusContext' not found.");
 
