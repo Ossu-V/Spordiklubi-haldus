@@ -1,4 +1,12 @@
+using Microsoft.EntityFrameworkCore;
+using Spordiklubi_haldus.Data;
 var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("SpordiklubiHaldusContext") ?? throw new InvalidOperationException("Connection string 'SpordiklubiHaldusContext' not found.");
+
+builder.Services.AddDbContext<SpordiklubiHaldusContext>(options =>
+{
+    options.UseInMemoryDatabase("SpordiklubiDb");
+});
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
