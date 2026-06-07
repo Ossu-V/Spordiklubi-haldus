@@ -13,9 +13,6 @@ namespace Spordiklubi_haldus.Models
 
         public int MaximumMembers { get; set; }
 
-        public int CoachId { get; set; }
-        public Coach Coach { get; set; }
-
         public int SportId { get; set; }
         public Sport Sport { get; set; }
 
