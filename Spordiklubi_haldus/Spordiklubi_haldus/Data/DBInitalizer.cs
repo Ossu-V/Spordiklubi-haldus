@@ -215,6 +215,21 @@ namespace Spordiklubi_haldus.Data
             }
 
             context.SaveChanges();
+
+            if (!context.Trainers.Any())
+            {
+                var trainers = new Trainer[]
+                {
+        new Trainer { FirstName = "Jaan", LastName = "Kivi", Specialization = "Basketball" },
+        new Trainer { FirstName = "Mari", LastName = "Maasikas", Specialization = "Gym" }
+                };
+
+                foreach (Trainer t in trainers)
+                {
+                    context.Trainers.Add(t);
+                }
+                context.SaveChanges();
+            }
         }
     }
 }
