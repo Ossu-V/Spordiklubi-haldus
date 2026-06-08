@@ -31,3 +31,8 @@ Treenerite register (Trainers): Eraldi moodul klubi personali ja treenerite hald
 Tehisintellekti (AI) kasutamine ja allikad:
 Koodi parandamine ja eestindamine: Kasutasime AI-d abilisena, et leida ja kustutada koodigeneraatori tekitatud vigane Memberships lahter, mis kuvas ekraanile arusaamatut teksti. Lisaks andis AI täpsed juhised ja koodinäited, kuidas andmetabeli pealkirjad ning lingid (Create New, Edit, Details, Delete) korrektselt eesti keelde tõlkida.
 Plagiaadi puudumine: Projekti funktsionaalsus ja loogika on meeskonna enda kirjutatud ning kohandatud. AI-d ei kasutatud valmis lahenduste kopeerimiseks, vaid ainult olemasoleva koodi parandamiseks ja õppimiseks. Kogu töö on unikaalne.
+
+Liikmed: 
+Oscar Välk
+Aron Tuur
+Aaron Võrk
