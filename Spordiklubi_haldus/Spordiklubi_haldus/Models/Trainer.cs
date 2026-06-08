@@ -7,14 +7,14 @@ namespace Spordiklubi_haldus.Models
         public int Id { get; set; }
 
         [Required]
-        [Display(Name = "Eesnimi")]
+        [Display(Name = "FirstName")]
         public string FirstName { get; set; }
 
         [Required]
-        [Display(Name = "Perekonnanimi")]
+        [Display(Name = "LastName")]
         public string LastName { get; set; }
 
-        [Display(Name = "Eriala")]
+        [Display(Name = "Sport")]
         public string Specialization { get; set; }
     }
 }
