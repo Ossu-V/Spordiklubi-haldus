@@ -1,8 +1,25 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container mt-5">
+    <div class="jumbotron p-5 mb-4 bg-light rounded-3 text-center">
+        <h1 class="display-4 fw-bold">Spordiklubi Haldussüsteem</h1>
+        <p class="lead mt-3">Tere tulemast infosüsteemi! Siit saate mugavalt hallata kõiki klubi igapäevaseid toiminguid.</p>
+        <hr class="my-4">
+
+        <div class="row text-start mt-4 justify-content-center">
+            <div class="col-md-5 bg-white p-4 m-2 rounded shadow-sm">
+                <h3>Liikmete haldus</h3>
+                <p>Lisage uusi klubiliikmeid, uuendage kontaktandmeid ja vaadake kehtivaid liitumislepinguid.</p>
+                <a class="btn btn-primary" asp-controller="Members" asp-action="Index">Ava liikmed</a>
+            </div>
+
+            <div class="col-md-5 bg-white p-4 m-2 rounded shadow-sm">
+                <h3>Treenerite register</h3>
+                <p>Vaadake klubi treenereid, nende spetsialiseerumisi ja lisage meeskonda uusi juhendajaid.</p>
+                <a class="btn btn-success" asp-controller="Trainers" asp-action="Index">Ava treenerid</a>
+            </div>
+        </div>
+    </div>
 </div>
