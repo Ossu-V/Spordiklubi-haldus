@@ -21,9 +21,6 @@
             <th>
                 @Html.DisplayNameFor(model => model.JoinDate)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Memberships)
-            </th>
             <th></th>
         </tr>
     </thead>
@@ -38,9 +35,6 @@
             </td>
             <td>
                 @Html.DisplayFor(model => item.JoinDate)
-            </td>
-            <td>
-                @Html.DisplayFor(model => item.Memberships)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
